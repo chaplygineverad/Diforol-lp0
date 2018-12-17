@@ -1,0 +1,10 @@
+.feel {
+  background: red;
+  height: 200px;
+  width: 100%;
+}
+@include r(1199) {
+  .feel {
+    background: #000000;
+  }
+}

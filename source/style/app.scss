@@ -48,6 +48,7 @@ input::-ms-clear {
 
 .title {
   font-size: 46px;
+  line-height: 1;
   text-align: center;
   font-weight: 700;
 }
@@ -55,10 +56,42 @@ input::-ms-clear {
 $violet: #2a3d70;
 $black20: #202020;
 $black44: #444444;
-$red: #f7420b
+$red: #f7420b;
 $old-price: #838383;
 $new-price: #87b136;
 
+/*___mixins___*/
+@mixin r($screen){
+  @media all and (max-width: $screen+'px'){
+    @content;
+  }
+}
+//==========================================
+@mixin b($screen){
+  @media all and (min-width: $screen+'px'){
+    @content;
+  }
+}
+//==========================================
+@mixin vcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//==========================================
+@mixin ycenter {
+  position: absolute;
+  top: 50%;
+  transform:  translate(0, -50%);
+}
+//==========================================
+@mixin xcenter {
+  position: absolute;
+  left: 50%;
+  transform:  translate(-50%, 0);
+}
+//==========================================
 
 @import "common/0-header";
 @import "common/1-feel";
@@ -68,38 +101,39 @@ $new-price: #87b136;
 @import "common/5-doctor";
 @import "common/6-feedback";
 @import "common/7-usage";
-@import "common/8-order";
+
 @import "common/9-footer";
 @import "common/popup.scss";
 @import "common/slick.scss";
 @import "common/slick-theme.scss";
 
-@media screen and (max-width: 1190px){
+
+
+@media screen and (max-width: 1199px){
   .wrapper {
-    width: 100%;
+    width: 1024px;
     padding-right: 10px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1023px){
+  .wrapper {    width: 768px;  }
   .title {
     font-size: 39px;
-    line-height: 39px;
   }
 }
 
 @media (max-width: 767px) {
+  .wrapper {    width: 480px;  }
   .title {
     font-size: 34px;
-    line-height: 34px;
   }
 }
 
-
 @media (max-width: 479px) {
+  .wrapper {    width: 320px;  }
   .title {
     font-size: 29px;
-    line-height: 29px;
   }
 }
