@@ -121,13 +121,14 @@
 }
 @media all and (max-width: 1199px) {
   .result {
-    padding: 40px 0 54px;
+    padding: 40px 0 0;
     &__items-container {
       max-width: 1023px;
       justify-content: space-around;
     }
     &__item {
       max-width: 300px;
+      margin-top: 70px;
     }
     &__man-image {
       margin-left: 26px;
@@ -145,7 +146,6 @@
 }
 @media all and (max-width: 1023px) {
   .result {
-    padding: 30px 0 44px;
    &__argument {
      max-width: 740px;
      margin-top: 44px;
@@ -156,7 +156,7 @@
 }
 @media all and (max-width: 767px) {
   .result {
-    padding: 25px 0 40px;
+    padding: 25px 0 0;
     &__title {
       max-width: 470px;
     }
