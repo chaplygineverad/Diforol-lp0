@@ -1,4 +1,109 @@
 .header {
   min-height: 800px;
-  background: #d6eff8;
+  background: #d6eff8 url('../img/header-bg.png');
+  padding: 41px 0;
+}
+
+.header__menu{
+  display: flex;
+  .item{
+    display: flex;
+    align-items: center;
+    .text{
+      color: #444444;
+      font-size: 17px;
+      position: relative;
+      margin: 0 0 0 15px;
+      width: 303px;
+      a{
+        .dashed{
+          border-bottom: 1px dashed rgba(68, 68, 68, 0.47843137254901963);
+        }
+      }
+    }
+  }
+  .center{
+    position: relative;
+    margin: 0px 131px 0 52px;
+    &:after{
+      height: 40px;
+      width: 1px;
+      background-color: #b1d7e4;
+      position: absolute;
+      content: '';
+      left: -78px;
+      top: 2px;
+
+    }
+    &:before{
+      height: 40px;
+      width: 1px;
+      background-color: #b1d7e4;
+      position: absolute;
+      content: '';
+      right: -62px;
+      top: 2px;
+    }
+  }
+}
+
+.header__block{
+  display: flex;
+  align-items: flex-start;
+  margin: 53px 0 0;
+  justify-content: space-between;
+  &__list{
+    width: 400px;
+    h1{
+      text-align: left;
+      font-weight: 900;
+      margin: 0;
+      font-size: 50px;
+      line-height: 46px;
+    }
+    .product__title{
+      color: #2a3d70;
+      font-weight: 500;
+      font-size: 39px;
+      margin: 0 0 22px;
+    }
+    .text{
+      color: #444444;
+      font-size: 21px;
+      margin: 17px 0 0;
+      line-height: 27px;
+    }
+    .list{
+      display: flex;
+      flex-direction: column;
+      margin: 38px 0 0;
+        li{
+          display: flex;
+          margin: 8px 0 0;
+          .check{
+            background: #edb440;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+          }
+          .list-text{
+            font-size: 20px;
+            color: #444444;
+            margin: 7px 0 0 14px;
+          }
+        }
+    }
+  }
+  &__pack-form{
+    display: flex;
+    .pack{
+      width: 547px;
+      height: 699px;
+      background:  url('../img/men.png');
+    }
+  }
 }
