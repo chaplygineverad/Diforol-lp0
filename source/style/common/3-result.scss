@@ -1,7 +1,7 @@
 .result {
   display: block;
   margin: 0 auto;
-  padding: 50px 0 64px;
+  padding: 38px 0 52px;
   &__title {
     max-width: 720px;
     margin: 0 auto;
@@ -121,7 +121,7 @@
 }
 @media all and (max-width: 1199px) {
   .result {
-    padding: 40px 0 0;
+    padding: 0;
     &__items-container {
       max-width: 1023px;
       justify-content: space-around;
@@ -156,7 +156,7 @@
 }
 @media all and (max-width: 767px) {
   .result {
-    padding: 25px 0 0;
+    padding: 0;
     &__title {
       max-width: 470px;
     }
@@ -179,7 +179,9 @@
 @media all and (max-width: 479px) {
   .result {
     &__argument {
-
+      padding: 10px 5px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }

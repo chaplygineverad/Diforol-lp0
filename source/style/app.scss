@@ -470,7 +470,7 @@ $new-price: #87B136;
 @media screen and (max-width: 1199px) {
   .wrapper {
     width: 1024px;
-    padding: 60px 10px;
+    padding: 40px 10px;
   }
   .title {
     font-size: 40px;
@@ -479,7 +479,7 @@ $new-price: #87B136;
 @media (max-width: 1023px) {
   .wrapper {
     width: 768px;
-    padding: 40px 10px;
+    padding: 30px 10px;
   }
   .title {
     font-size: 34px;
@@ -488,7 +488,7 @@ $new-price: #87B136;
 @media (max-width: 767px) {
   .wrapper {
     width: 480px;
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
   .title {
     font-size: 29px;
@@ -497,7 +497,7 @@ $new-price: #87B136;
 @media (max-width: 479px) {
   .wrapper {
     width: 320px;
-    padding: 20px 10px;
+    padding: 10px;
   }
   .title {
     font-size: 24px;

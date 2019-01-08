@@ -4,11 +4,12 @@
   background: url("../img/4-bg-2layers.png") 100% no-repeat;
   background-size: cover;
   background-position: center top;
+  padding-bottom: 23px;
   &__banner {
     display: block;
     max-width: 1120px;
     margin: 0 auto 38px;
-    padding-top: 101px;
+    padding-top: 95px;
     text-align: center;
     font-weight: 700;
     color: $black20;
@@ -256,7 +257,7 @@
     align-items: end;
     justify-content: space-around;
     width: 100%;
-    max-width: 723px;
+    max-width: 732px;
   }
   &__input-block {
     display: block;
@@ -280,8 +281,8 @@
         width: 21px;
         height: 24px;
         position: absolute;
-        left: 21px;
-        top: 27px;
+        left: 16px;
+        top: 26px;
       }
     }
   }
@@ -317,7 +318,7 @@
     position: relative;
     margin: 0;
     text-align: center;
-    padding: 4px 26px 4px;
+    padding: 4px 25px;
     vertical-align: top;
     span {
       display: block;
@@ -341,6 +342,7 @@
   .new-life {
     background-size: cover;
     background-position: center;
+    padding-bottom: 0;
     &__banner {
       padding-top: 70px;
     }
@@ -372,11 +374,11 @@
 
 @media all and (max-width: 1023px) {
   .new-life {
-  &__banner {
-    span {
-      white-space: unset;
+    &__banner {
+      span {
+        white-space: unset;
+      }
     }
-  }
   }
 }
 
@@ -408,5 +410,44 @@
       margin-bottom: 15px;
     }
 
+  }
+}
+@media all and (max-width: 479px) {
+  .new-life {
+    &__banner {
+      margin-bottom: 10px;
+      padding-top: 20px;
+    }
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
+}
+.new-life__form {
+  position: relative;
+}
+.new_snoska {
+  font-size: 14px;
+  position: absolute;
+  width: 220px;
+  right: 14px;
+  bottom: -20px;
+  text-align: center;
+}
+.new-life__prices .-new .x_currency:after {
+  content: '*';
+}
+@media all and (max-width: 1199px) {
+  .new_snoska {
+    width: 100%;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    top: 5px;
+  }
+}
+@media all and (max-width: 767px) {
+  .new_snoska {
+    top: 10px;
   }
 }

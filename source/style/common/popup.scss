@@ -1,8 +1,7 @@
-// form
-.form {
+.form-pop {
   height: auto;
   width: 278px;
-  margin-left: auto;
+  margin-left: 80px;
   color: #444;
   background-color: #fff;
   text-align: center;
@@ -109,7 +108,7 @@
     padding-left: 30px;
     position: relative;
     text-align: left;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 15px;
     margin-left: auto;margin-right: auto;
     width: 213px;
@@ -283,8 +282,10 @@
   width: 902px;
 
   border-radius: 5px;
-  background: url(../img/popup-bg.png) no-repeat top;
+  background: url(../img/0-header-bg.png) no-repeat;
   background-color: #FFFFFF;
+  background-position: 0px 0px;
+  background-size: 1305px 455px;
   box-sizing: border-box;
   border-radius: 8px;
   max-width: 100%;
@@ -358,10 +359,11 @@
     width: 100%;
   }
 }
-@media(min-width: 1001px) {
+@media(min-width: 1000px) {
   .ever-popup__close {
     top: 25px !important;
     right: 25px !important;
+    transition: all 0s!important;
   }
   .ever-popup__close:after, .ever-popup__close:before {
     content: "";
@@ -371,9 +373,10 @@
     width: 30px !important;
     height: 3px !important;
     background: #222222 !important;
+    transition: all 0s!important;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .pop-up {
     display: none !important;
   }
@@ -381,11 +384,12 @@
     display: none !important;
   }
   .ever-popup__close {
-    top: 25px !important;
-    right: 25px !important;
+    top: 0px !important;
+    right: 0px !important;
+    transition: all 0s!important;
   }
   .ever-popup__inner {
     max-width: 100% !important;
-    padding-top: 0 !important;
+    padding-top: 35px !important;
   }
 }

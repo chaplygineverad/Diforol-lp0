@@ -1,15 +1,15 @@
 .feedback {
   display: block;
   width: 100%;
-  background: url("../img/6-bg.png") 100% no-repeat;
+  background: url("../img/4-bg-2layers.png") 100% no-repeat;
   background-size: cover;
   background-position: center top;
-  margin-top: -116px;
+  margin-top: -110px;
   position: relative;
   z-index: auto;
   &__banner {
     display: block;
-    padding: 97px 0 73px;
+    padding: 91px 0 73px;
     text-align: center;
     font-weight: 700;
     color: $black20;
@@ -46,14 +46,14 @@
     line-height: 28px;
     text-align: center;
     color: $black20;
-    padding: 158px 0 28px;
-    &.-first-name {
-      padding: 158px 0 28px;
-    }
+    padding: 156px 0 28px;
+    /*&.-first-name {
+      padding: 155px 0 28px 0;
+    }*/
   }
   &__quote {
     background-color: #f7d373;
-    padding: 22px 0 16px;
+    padding: 24px 0 16px;
     &.-first-quote {
       padding: 38px 0 25px;
       &:before {
@@ -173,6 +173,9 @@
 }
 @media all and (max-width: 479px) {
   .feedback {
+    &__banner {
+      padding: 30px 0;
+    }
     &__slider-container {
       max-width: 280px;
     }
@@ -186,6 +189,25 @@
     &__comment {
       line-height: 21px;
       font-size: 16px;
+    }
+  }
+}
+.feedback__comment {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.7) 47%, #FFFFFF 90%, #FFFFFF 100%);
+    width: 100%;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &-active {
+    &:after {
+      display: none;
     }
   }
 }

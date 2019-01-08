@@ -198,11 +198,8 @@ function postDate(sa, countryName, isAbbreviated) {
                 innerDate += " " + year;
                 return innerDate;
 
-            case "dd/mm/yyyy":
-                innerDate += (day < 10) ? ("0" + day) : day;
-                innerDate += "/";
-                innerDate += (month < 10) ? ("0" + month) : month;
-                innerDate += "/" + year;
+            case "yyyy":
+                innerDate += year;
                 return innerDate;
 
             case "dd-mm-yyyy":
@@ -245,3 +242,9 @@ function postDate(sa, countryName, isAbbreviated) {
         }
     }
 }
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 25
+    }, 1000);
+});

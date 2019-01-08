@@ -14,15 +14,12 @@
     bottom: 0;
   }
 }
-.podlozhka {
-  width: 100%;
-  height: 200px;
-  background: #FFFFFF;
-}
 .effective {
   position: relative;
-  background: #E4F3F9 url("../img/effective-bg.png") no-repeat top center;
-  padding: 96px 0 106px;
+  //background: #E4F3F9 url("../img/effective-bg.png") no-repeat top center;
+  background: url("../img/4-bg-2layers.png") no-repeat top center;
+  background-size: cover;
+  padding: 96px 0 113px;
   & .wrapper {
     position: relative;
     z-index: 0;
@@ -165,7 +162,7 @@
   &__bottom {
     width: 100%;
     margin-top: 40px;
-    padding: 10px 90px 13px;
+    padding: 10px 80px 13px;
     border: 3px solid #C3DCE6;
     border-radius: 75px;
     &-text {
@@ -179,6 +176,7 @@
   }
 
 }
+
 .check-svg {
   fill: #FFFFFF;
 }
@@ -289,7 +287,10 @@
 }
 @include r(1199) {
   .effective {
-    padding: 0;
+    padding: 20px 0 50px;
+    /*&__title {
+      padding-top: 15px;
+    }*/
     &__triangle {
       width: 38px;
       height: 16px;

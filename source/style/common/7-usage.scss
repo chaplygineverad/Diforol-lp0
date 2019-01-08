@@ -206,7 +206,7 @@
   .order {
 
     &__custom-padding {
-      padding-top: 0 !important;
+      padding: 0 10px 0 !important;
     }
     &__banner {
       padding-top: 0;
@@ -268,6 +268,9 @@
 }
 @media all and (max-width: 767px) {
   .usage {
+   /* &__custom-wrapper {
+      padding: 30px 10px 0;
+    }*/
     &__banner {
       padding: 0 0 55px;
     }
@@ -305,7 +308,7 @@
 @media all and (max-width: 479px) {
   .usage {
     &__banner {
-      padding: 0 0 40px;
+      padding: 0 0 30px;
     }
     &__image {
       display: none;
@@ -318,11 +321,11 @@
     }
     &__additional-info {
       max-width: 300px;
-      padding: 10px 39px;
       border-radius: 40px;
-      font-size: 21px;
       font-weight: 500;
-      line-height: 30px;
+      padding: 10px 5px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
   .order {
@@ -330,7 +333,9 @@
       margin: 0 auto 10px;
     }
     &__additional-info {
-      font-size: 20px;
+      padding: 10px 5px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }

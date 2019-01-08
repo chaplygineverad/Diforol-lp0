@@ -31,16 +31,23 @@ $(document).ready()
         block.toggleClass("feedback__comment-active");
         $(this).toggleClass("feedback__show-button-active");
     });
-
+    // Alex add
+    $('.feedback-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $(".feedback__comment").removeClass("feedback__comment-active");
+        $(".feedback__show-button").removeClass("feedback__show-button-active");
+    });
+    // Alex add
     $('.feedback-slider').slick({
         infinite: true,
         slidesToShow: 3,
+        arrows: false,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1023,
+                breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    arrows: true
                 }
             },
             {
