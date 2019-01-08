@@ -409,7 +409,7 @@
   .header {
     background: url(../img/wave-bottom.png) center 789px no-repeat,
     url(../img/men.png) center 121px no-repeat,
-    url(../img/0-header-bg.png) center top -1px no-repeat;
+    url(../img/0-header-bg.png) center top no-repeat;
 
     &.-bottom-section {
       background: url('../img/wave-bottom.png') center 850px no-repeat,
@@ -655,12 +655,3 @@
     }
   }
 }
-/*
-.Shape_25_copy_2 {
-  background-image: -ms-linear-gradient( -1deg, rgb(228,235,255) 0%, rgb(245,248,255) 100%);
-  opacity: 0.149;
-}
-
-
-
-*/
